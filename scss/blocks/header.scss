@@ -20,9 +20,16 @@
   &__menu-item {
     display: inline-block;
     margin: 0 34px 0 0;
+    transition: opacity .2s ease-in;
+    cursor: pointer;
 
     &:last-of-type {
       margin: 0;
+    }
+
+    &:hover {
+      transition: opacity .2s ease-in;
+      opacity: 0.75;
     }
   }
 }

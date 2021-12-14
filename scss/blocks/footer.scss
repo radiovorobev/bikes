@@ -2,23 +2,30 @@
   background-color: $lightest-grey;
   padding: 80px 120px 60px 120px;
 
-  &__header {
+  &__input-label {
     @include base-font(24px, 600, 1.33);
     color: $basic-black;
     width: 229px;
     margin: 0 0 50px 0;
+    display: block;
   }
 
   &__input {
     width: 360px;
     height: 50px; //Wrong!
-    border: 1px solid $basic-grey;
+    border: 1px solid rgba(199, 199, 199, .5);
     border-radius: 4px;
     box-sizing: border-box;
     background-color: $lightest-grey;
     padding: 0 20px;
     @include base-font(13px, 500, 2.15);
     color: $basic-black;
+    cursor: pointer;
+
+      &:focus {
+        border: 1px solid rgba(199, 199, 199, 1);
+        outline: 0;
+      }
   }
 
   &__copyright {

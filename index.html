@@ -70,8 +70,8 @@
         <nav>
           <ul class="section__navigation">
             <li class="section__navigation-item">Шоссе</li>
-            <li class="section__navigation-item">Грэвел</li>
-            <li class="section__navigation-item">TT</li>
+            <li class="section__navigation-item section__navigation-item_inactive">Грэвел</li>
+            <li class="section__navigation-item section__navigation-item_inactive">TT</li>
           </ul>
         </nav>
       </div>
@@ -129,16 +129,18 @@
       <h2 class="section__title section__title_trainings">Тренировки</h2>
       <p class="section__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
         <ul class="section__navigation section__navigation_trainings">
-          <li class="section__navigation-item section__navigation-item_trainings">Strava</li><!--
-          --><li class="section__navigation-item section__navigation-item_trainings">Komoot</li>
+          <li class="section__navigation-item section__navigation-item_trainings"><a class="section__navigation-item-link" href="https://www.strava.com" target="_blank">Strava</a></li><!--
+          --><li class="section__navigation-item section__navigation-item_trainings"><a class="section__navigation-item-link" href="https://www.komoot.com" target="_blank">Komoot</a></li>
         </ul>
       </div>
       <img class="section__image" src="./images/training.png" alt="Дорога в лесу">
     </section>
   </main>
   <footer class="footer">
-    <h3 class="footer__header">Подпишитесь на рассылку &mdash;</h3>
-    <input class="footer__input" type="email" placeholder="Ваш e-mail">
+    <label for="email" class="footer__input-label">
+      Подпишитесь на рассылку &mdash;
+    </label>
+    <input class="footer__input" type="email" placeholder="Ваш e-mail" id="email">
     <div class="footer__bottom">
       <span class="footer__copyright">&copy; Road Club 2021</span>
       <form class="footer__switcher-block">
