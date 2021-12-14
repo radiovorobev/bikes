@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   position: sticky;
-  top: 347px;
+  top: 420px;
   width: 440px;
   height: 300px;
   border-radius: 20px;
@@ -347,6 +347,54 @@
   font-weight: 600;
   line-height: 1.4;
   color: #cfcfcf;
+}
+.footer__bottom {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer__switcher-block {
+  display: flex;
+  align-items: center;
+}
+.footer__switcher {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #fff;
+  margin: 0 22px;
+}
+.footer__switcher-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.footer__switcher-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.footer__switcher-button:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 2px;
+  top: 2px;
+  background-color: #24b47e;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+.footer .footer__switcher-input:checked + .footer__switcher-button:before {
+  transform: translateX(20px);
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -139,8 +139,17 @@
   <footer class="footer">
     <h3 class="footer__header">Подпишитесь на рассылку &mdash;</h3>
     <input class="footer__input" type="email" placeholder="Ваш e-mail">
-    <span class="footer__copyright">&copy; Road Club 2021</span>
-    <!-- radiobutton switch to dark theme -->
+    <div class="footer__bottom">
+      <span class="footer__copyright">&copy; Road Club 2021</span>
+      <form class="footer__switcher-block">
+        <img src="./images/light.svg" alt="Светлая тема">
+        <label class="footer__switcher">
+          <input type="checkbox" class="footer__switcher-input">
+          <span class="footer__switcher-button"></span>
+        </label>
+        <img src="./images/dark.svg" alt="Тёмная тема">
+      </form>
+    </div>
   </footer>
 </body>
 </html>
