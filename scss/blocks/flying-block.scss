@@ -1,0 +1,21 @@
+.flying-block {
+  position: absolute;
+  background-color: transparent;
+  top: 347px;
+  left: 43.75%;
+  height: 430px;
+  z-index: 1;
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 347px;
+    width: 440px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: -20px 60px 220px 0px rgba(0, 0, 0, 0.44);
+    background-color: $grey;
+  }
+}

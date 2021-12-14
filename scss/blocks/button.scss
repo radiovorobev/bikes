@@ -1,7 +1,6 @@
 .button {
   width: 180px;
   height: 50px; //WRONG!
-  background-color: $basic-green;
   @include base-font(14px, 400, 1.29);
   letter-spacing: 1px;
   color: $pure-white;
@@ -9,9 +8,17 @@
   padding: 0;
   cursor: pointer;
 
+
   &_place_first-screen {
     grid-area: button;
     margin: 0 0 50px 0;
+    background: linear-gradient(to left, $basic-green 50%, $dark-green 50%) right;
+    background-size: 200%;
+    transition: 0.2s ease-in;
+
+    &:hover {
+      background-position: left;
+    }
   }
 
   &_type_circle {

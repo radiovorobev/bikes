@@ -49,6 +49,7 @@
   }
 
   &_first-screen {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 610px;
     grid-template-rows: auto auto auto 1fr;
