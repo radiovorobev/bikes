@@ -1,0 +1,9 @@
+.header {
+  min-height: 74px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  padding: 0 120px;
+}
+
+/*# sourceMappingURL=header.css.map */

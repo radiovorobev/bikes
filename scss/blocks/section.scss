@@ -1,0 +1,129 @@
+.section {
+  padding: 20px 0 0 120px;
+
+  &__title {
+    @include base-font (55px, 700, 1.09);
+    letter-spacing: -0.5px;
+    color: $basic-black;
+    margin: 60px 0 50px 0;
+    max-width: 460px;
+
+      &_first-screen {
+        grid-area: title;
+      }
+
+      &_trainings {
+        margin: 0 0 50px 0;
+      }
+
+  }
+
+  &__text {
+    @include base-font (18px, 400, 1.56);
+    color: $light-black;
+    opacity: 0.7;
+    margin: 0 0 50px 0;
+    max-width: 460px;
+
+      &_first-screen {
+        grid-area: text;
+      }
+  }
+
+  &__bike-name {
+    grid-area: bike;
+    margin: 117px 0 0 0;
+    display: inline-block;
+    align-self: start;
+    @include base-font(18px, 400, 1);
+    color: $basic-black;
+
+    &::after {
+      display: inline-block;
+      content: '';
+      width: 132px;
+      border-top: 2px $another-grey solid;
+      margin: 0 0 0 30px;
+      padding: 2px 0;
+    }
+  }
+
+  &_first-screen {
+    display: grid;
+    grid-template-columns: 1fr 610px;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+            "title image"
+            "text image"
+            "button image"
+            "bike image";
+  }
+
+  &_quote {
+    display: flex;
+    flex-flow: row;
+    padding: 120px 0 0 120px;
+  }
+
+  &_bike-types {
+    padding: 60px 0 0 120px;
+    overflow: hidden;
+  }
+
+  &_bikes {
+    padding: 60px 0 0 120px;
+  }
+
+  &__header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__navigation {
+    margin: 0;
+    padding: 0 120px 0 0;
+    list-style-type: none;
+
+    &_trainings {
+      margin-top: auto;
+      padding: 0;
+    }
+  }
+
+  &__navigation-item {
+    display: inline-block;
+    @include base-font(18px, 600, 1.56);
+    color: $basic-black;
+    margin: 26px 0 0 40px;
+
+      &:first-of-type {
+        margin: 26px 0 0 0;
+      }
+
+      &_trainings {
+        margin: 0 0 0 30px;
+      }
+  }
+
+  &_trainings {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 160px 0 120px 120px;
+  }
+
+  &__text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__image {
+    margin: 0 120px 0 0;
+  }
+
+}

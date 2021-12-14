@@ -1,0 +1,11 @@
+.page {
+  max-width: 1440px;
+  min-width: 320px;
+  background-color: $light-theme-background;
+
+  &__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}

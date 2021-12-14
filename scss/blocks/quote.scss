@@ -1,0 +1,33 @@
+.quote {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
+  &__text {
+    margin: 0 0 0 80px;
+    max-width: 470px;
+    @include base-font(32px, 600, 44px);
+    letter-spacing: -0.5px;
+    color: $basic-black;
+  }
+
+  &__signature {
+    margin: 0 0 0 80px;
+  }
+
+  &__author {
+    display: block;
+    @include base-font(20px, 500, 1.6);
+    color: $basic-black;
+    margin: 0 0 5px 0;
+  }
+
+  &__author-status {
+    display: block;
+    @include base-font(16px, 400, 1.75);
+    color: $light-black;
+    opacity: 0.7;
+    margin: 0 0 5px 0;
+  }
+}

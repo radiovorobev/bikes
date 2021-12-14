@@ -1,0 +1,318 @@
+@import './vendor/normalize.css';
+@import './vendor/fonts/fonts.css';
+.page {
+  max-width: 1440px;
+  min-width: 320px;
+  background-color: #f4f4f4;
+}
+.page__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header {
+  min-height: 74px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 120px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+.header__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #151515;
+}
+.header__menu-item {
+  display: inline-block;
+  margin: 0 34px 0 0;
+}
+.header__menu-item:last-of-type {
+  margin: 0;
+}
+
+.section {
+  padding: 20px 0 0 120px;
+}
+.section__title {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.09;
+  letter-spacing: -0.5px;
+  color: #151515;
+  margin: 60px 0 50px 0;
+  max-width: 460px;
+}
+.section__title_first-screen {
+  grid-area: title;
+}
+.section__title_trainings {
+  margin: 0 0 50px 0;
+}
+.section__text {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+  color: #222;
+  opacity: 0.7;
+  margin: 0 0 50px 0;
+  max-width: 460px;
+}
+.section__text_first-screen {
+  grid-area: text;
+}
+.section__bike-name {
+  grid-area: bike;
+  margin: 117px 0 0 0;
+  display: inline-block;
+  align-self: start;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  color: #151515;
+}
+.section__bike-name::after {
+  display: inline-block;
+  content: "";
+  width: 132px;
+  border-top: 2px #d7d4d4 solid;
+  margin: 0 0 0 30px;
+  padding: 2px 0;
+}
+.section_first-screen {
+  display: grid;
+  grid-template-columns: 1fr 610px;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: "title image" "text image" "button image" "bike image";
+}
+.section_quote {
+  display: flex;
+  flex-flow: row;
+  padding: 120px 0 0 120px;
+}
+.section_bike-types {
+  padding: 60px 0 0 120px;
+  overflow: hidden;
+}
+.section_bikes {
+  padding: 60px 0 0 120px;
+}
+.section__header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__navigation {
+  margin: 0;
+  padding: 0 120px 0 0;
+  list-style-type: none;
+}
+.section__navigation_trainings {
+  margin-top: auto;
+  padding: 0;
+}
+.section__navigation-item {
+  display: inline-block;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.56;
+  color: #151515;
+  margin: 26px 0 0 40px;
+}
+.section__navigation-item:first-of-type {
+  margin: 26px 0 0 0;
+}
+.section__navigation-item_trainings {
+  margin: 0 0 0 30px;
+}
+.section_trainings {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 160px 0 120px 120px;
+}
+.section__text-container {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section__image {
+  margin: 0 120px 0 0;
+}
+
+.button {
+  width: 180px;
+  height: 50px;
+  background-color: #24b47e;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: 1px;
+  color: #fff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.button_place_first-screen {
+  grid-area: button;
+  margin: 0 0 50px 0;
+}
+.button_type_circle {
+  width: 50px;
+  border-radius: 25px;
+  border: none;
+}
+.button_type_circle:hover {
+  opacity: 0.6;
+}
+.button_forward {
+  background: #ebebeb url("../../images/arrow-forward.svg") no-repeat center center;
+}
+.button_back {
+  background: #ebebeb url("../../images/arrow-back.svg") no-repeat center center;
+  margin: 0 20px 0 0;
+}
+
+.quote {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.quote__text {
+  margin: 0 0 0 80px;
+  max-width: 470px;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+.quote__signature {
+  margin: 0 0 0 80px;
+}
+.quote__author {
+  display: block;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #151515;
+  margin: 0 0 5px 0;
+}
+.quote__author-status {
+  display: block;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #222;
+  opacity: 0.7;
+  margin: 0 0 5px 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  white-space: nowrap;
+  font-size: 0;
+}
+.list__item {
+  display: inline-block;
+  margin: 30px 0 50px 40px;
+}
+.list__item:first-of-type {
+  margin: 30px 0 50px 0;
+}
+.list__item_card {
+  display: inline-block;
+  margin: 65px 0 50px 30px;
+}
+.list__item-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+}
+.list__item-header {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  color: #151515;
+  margin: 22px 0 0 6px;
+}
+
+.footer {
+  background-color: #efefef;
+  padding: 80px 120px 60px 120px;
+}
+.footer__header {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #151515;
+  width: 229px;
+  margin: 0 0 50px 0;
+}
+.footer__input {
+  width: 360px;
+  height: 50px;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #efefef;
+  padding: 0 20px;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 2.15;
+  color: #151515;
+}
+.footer__copyright {
+  display: block;
+  margin: 100px 0 0 0;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #cfcfcf;
+}
+
+/*# sourceMappingURL=index.css.map */

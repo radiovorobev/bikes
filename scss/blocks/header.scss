@@ -1,0 +1,27 @@
+.header {
+  min-height: 74px;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 120px;
+  box-sizing: border-box;
+  background-color: $light-theme-background;
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include base-font(14px, 500, 1.29);
+    color: $basic-black;
+  }
+
+  &__menu-item {
+    display: inline-block;
+    margin: 0 34px 0 0;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}

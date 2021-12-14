@@ -1,0 +1,35 @@
+.button {
+  width: 180px;
+  height: 50px; //WRONG!
+  background-color: $basic-green;
+  @include base-font(14px, 400, 1.29);
+  letter-spacing: 1px;
+  color: $pure-white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &_place_first-screen {
+    grid-area: button;
+    margin: 0 0 50px 0;
+  }
+
+  &_type_circle {
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+  }
+
+  &_forward {
+    background: $lighter-grey url("../../images/arrow-forward.svg") no-repeat center center;
+  }
+
+  &_back {
+    background: $lighter-grey url("../../images/arrow-back.svg") no-repeat center center;
+    margin: 0 20px 0 0;
+  }
+}
