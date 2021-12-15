@@ -46,6 +46,10 @@
   transition: opacity 0.2s ease-in;
   opacity: 0.75;
 }
+.header__menu-link {
+  text-decoration: none;
+  color: #151515;
+}
 
 .flying-block {
   position: absolute;

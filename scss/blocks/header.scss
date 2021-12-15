@@ -32,4 +32,9 @@
       opacity: 0.75;
     }
   }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $basic-black;
+  }
 }
